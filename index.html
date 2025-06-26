@@ -8,16 +8,18 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Gabarito&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel = "stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css">
   <title>Udemy</title>
 </head>
 
 <body>
-
-  <div class = "navbar">
-    <div class = "navbar__left">
-      <h1 class="navbar__left__title">Udemy</h1>
+  <!-- Navbar -->
+  <div class="navbar">
+    <div class="navbar__left">
+      <img class="navbar__left__logo" src="images/logo-udemy.svg">
     </div>
 
     <div class="navbar__middle">
@@ -32,6 +34,183 @@
       <i class="fa-solid fa-bell"></i>
       <i class="fa-solid fa-user"></i>
     </div>
+  </div>
+
+  <!--Categories-->
+  <div class="categories">
+    <p>Development</p>
+    <p>Buisness</p>
+    <p>It & Software</p>
+    <p>Personal Development</p>
+    <p>Design</p>
+    <p>Marketing</p>
+  </div>
+
+  <!--sale Image-->
+
+  <div class="sale">
+    <img src="./images/udemy-sale.jpg" alt="No sale Today">
+  </div>
+
+  <!--Recommended-->
+  <div class="recommended">
+    <h1 class="recommended__title">Recommended For you</h1>
+    <p>Pick the Best Fit</p>
+    <div class="recommended__container">
+      <div class="course_card">
+        <img src="./images/courses/Js.webp">
+        <div class="title-container">
+          <h3 class="course_title">The Complete Modern JavaScript </h3>
+        </div>
+        <p class="course_author">Jonas Schmedtmann</p>
+        <div class="course_rating_container">
+          <p class="course_rating">4.5</p>
+          <img src="./images/courses/4-star-rating.png">
+        </div>
+        <p class="course_price">₹639 <span class="course_org_price">₹4109</span></p>
+        <div class="course_options">
+          <button class="course_enroll">Enroll Now</button>
+          <button class="course_Add_To_cart">
+            <img src="images/verified-logo.png">
+            Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="course_card">
+        <img src="./images/courses/react.webp">
+        <div class="title-container">
+          <h3 class="course_title">The Ultimate React Course 2025: React, Next.js, Redux & More</h3>
+        </div>
+        <p class="course_author">Jonas Schmedtmann</p>
+        <div class="course_rating_container">
+          <p class="course_rating">4.8</p>
+          <img src="./images/courses/5-star-rating.jpg">
+        </div>
+        <p class="course_price">₹529 <span class="course_org_price">₹799</span></p>
+        <div class="course_options">
+          <button class="course_enroll">Enroll Now</button>
+          <button class="course_Add_To_cart">
+            <img src="images/verified-logo.png">
+            Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="course_card">
+        <img src="./images/courses/python.webp">
+        <div class="title-container">
+          <h3 class="course_title">The complete Python: Beginner to Advanced</h3>
+        </div>
+        <p class="course_author">Dr.Angela Yu</p>
+        <div class="course_rating_container">
+          <p class="course_rating">4.4</p>
+          <img src="./images/courses/4-star-rating.png">
+        </div>
+        <p class="course_price">₹509 <span class="course_org_price">₹3389</span></p>
+        <div class="course_options">
+          <button class="course_enroll">Enroll Now</button>
+          <button class="course_Add_To_cart">
+            <img src="images/verified-logo.png">
+            Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="course_card">
+        <img src="./images/courses/next.webp">
+        <div class="title-container">
+          <h3 class="course_title">Mastering Next.js : Building Modern Web Applications</h3>
+        </div>
+        <p class="course_author">Thilak Sundaram</p>
+        <div class="course_rating_container">
+          <p class="course_rating">4.9</p>
+          <img src="./images/courses/5-star-rating.jpg">
+        </div>
+        <p class="course_price">₹479<span class="course_org_price">₹1769</span></p>
+        <div class="course_options">
+          <button class="course_enroll">Enroll Now</button>
+          <button class="course_Add_To_cart">
+            <img src="images/verified-logo.png">
+            Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="course_card">
+        <img src="./images/courses/mongodb.webp">
+        <div class="title-container">
+          <h3 class="course_title">MongoDB - The Complete Developer's Guide</h3>
+        </div>
+        <p class="course_author">Maximilian Schwarzmuller</p>
+        <div class="course_rating_container">
+          <p class="course_rating">4.1</p>
+          <img src="./images/courses/4-star-rating.png">
+        </div>
+        <p class="course_price">₹499 <span class="course_org_price">₹3399</span></p>
+        <div class="course_options">
+          <button class="course_enroll">Enroll Now</button>
+          <button class="course_Add_To_cart">
+            <img src="images/verified-logo.png">
+            Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="course_card">
+        <img src="./images/courses/webdev.webp">
+        <div class="title-container">
+          <h3 class="course_title">Complete Web Development Course</h3>
+        </div>
+        <p class="course_author">Hitesh Choudhary</p>
+        <div class="course_rating_container">
+          <p class="course_rating">4.2</p>
+          <img src="./images/courses/4-star-rating.png">
+        </div>
+        <p class="course_price">₹399<span class="course_org_price">₹1999</span></p>
+        <div class="course_options">
+          <button class="course_enroll">Enroll Now</button>
+          <button class="course_Add_To_cart">
+            <img src="images/verified-logo.png">
+            Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="course_card">
+        <img src="./images/courses/bootstrap.webp">
+        <div class="title-container">
+          <h3 class="course_title">Learn Bootstrap 5 From Scratch</h3>
+        </div>
+        <p class="course_author">Brad Traversy</p>
+        <div class="course_rating_container">
+          <p class="course_rating">4.8</p>
+          <img src="./images/courses/5-star-rating.jpg">
+        </div>
+        <p class="course_price">₹479<span class="course_org_price">₹899</span></p>
+        <div class="course_options">
+          <button class="course_enroll">Enroll Now</button>
+          <button class="course_Add_To_cart">
+            <img src="images/verified-logo.png">
+            Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="course_card">
+        <img src="./images/courses/azure.webp">
+        <div class="title-container">
+          <h3 class="course_title">Microsoft Azure Cloud Fundamentals</h3>
+        </div>
+        <p class="course_author">Global Edge Academy</p>
+        <div class="course_rating_container">
+          <p class="course_rating">5</p>
+          <img src="./images/courses/5-star-rating.jpg">
+        </div>
+        <p class="course_price">₹799<span class="course_org_price">₹2999</span></p>
+        <div class="course_options">
+          <button class="course_enroll">Enroll Now</button>
+          <button class="course_Add_To_cart">
+            <img src="images/verified-logo.png">
+            Add to Cart</button>
+        </div>
+      </div>
+
+    </div>
+
   </div>
 </body>
 
