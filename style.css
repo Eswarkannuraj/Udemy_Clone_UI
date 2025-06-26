@@ -92,7 +92,7 @@ body{
 
 .course_card{
   width: 250px;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 .course_card img{
   width: 100%;
@@ -154,3 +154,61 @@ body{
   margin-right: 3px;
 }
 
+.topics{
+  padding: 10px;
+}
+
+.topics__container{
+  display: flex;
+  gap:5px;
+  flex-wrap: wrap; /* to allow items to wrap to the next line if they don't fit */
+  margin-top: 10px;
+}
+
+.topics__container p{
+  border: solid 2px black;
+  padding: 5px;
+  flex-grow: 1; /* to make the p tag take all the available space */
+  flex-basis: 25%;
+}
+
+.popular{
+  padding: 15px;
+}
+
+.popular__container{
+  display: flex;
+  flex-wrap:wrap;
+  margin-top: 10px;
+  justify-content: space-evenly;
+}
+
+.footer{
+  background-color: black;
+  color: white;
+  
+}
+.footer__one{
+  display: flex;
+  justify-content: space-around;
+  padding: 15px;
+}
+
+.footer__one p{
+  margin-top: 5px;
+}
+
+
+.footer__two{
+  display: flex;
+  gap:20px;
+  align-items: center;
+  margin: 0px 45px;
+}
+
+.footer__two h1{/* to clip backgrond color to text*/
+  background:linear-gradient(to right, #854cff , #f65eb4);
+  background-clip: text;
+  color: transparent;
+  -webkit-background-clip: text;
+}
