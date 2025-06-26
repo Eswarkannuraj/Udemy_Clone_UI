@@ -1,0 +1,46 @@
+*{
+  margin: 0px;
+  padding: 0px;
+
+}
+
+body{
+  font-family: 'Gabarito', sans-serif;
+}
+
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  border-bottom: solid 1px black;
+  padding: 3px;
+  gap: 10px;
+  align-items: center;
+}
+
+.navbar__left__title{
+  color: #9334D8
+}
+
+.navbar__middle{
+  padding: 10px;
+  border: solid 1px black;
+  border-radius: 20px;
+  width: 60%;
+  display: flex;
+   gap:10px  /*to give gap between flexitems */
+}
+
+.navbar__middle input{
+  border: none;
+  width: 100%;
+}
+
+.navbar__middle input:focus{
+  outline: none;
+}
+
+.navbar__right{
+  display: flex;
+  gap: 10px;
+  
+}
