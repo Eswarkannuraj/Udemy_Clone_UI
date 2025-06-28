@@ -85,16 +85,20 @@ body{
   color: white;
   padding: 4px 15px;
   border-radius: 20px;
+  transition: 0.5s ease-in-out;
 }
 
-  /*hover is used to change the style when mouse is over the element */
 .categories p:hover{
   cursor: pointer;
+  transition: 0.5s ease-in-out; /* to give smooth transition */;
+  color: #d000ff;
+  background-color: white;
   box-shadow: 3px 3px 5px #fd2df6; 
 } 
 
 .categories p:active{
   background-color: #d000ff;
+  color: white;
   cursor: pointer;
   box-shadow: 7px 4px 5px #fd2df6; 
 }
@@ -117,8 +121,20 @@ body{
   left:30px;
   padding: 10px;
   box-shadow: 2px 3px 2px #9f68f1;
+  animation:zoom 3s ease-in forwards; /* to animate the discount sale */
+  opacity: 0;
 }
+@keyframes zoom{
+  0%{
+    transform:scale(0);
+    opacity:0;
+  }
 
+  100%{
+    transform:scale(1);
+    opacity:1;
+  }
+}
 .recommended{
   padding: 15px;
 }
