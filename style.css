@@ -13,7 +13,7 @@ body{
   top:0px;
   display: flex;
   background-color: #fff;
-  justify-content: space-around;
+  justify-content: space-between;
   box-shadow: 1px 2px 5px #cba9fe;
   padding: 3px;
   gap: 10px;
@@ -49,6 +49,10 @@ body{
 .navbar__right{
   display: flex;
   gap: 15px;
+}
+
+.navbar__right__hidden{
+  display: none;
 }
 
 .myLearning{
@@ -147,8 +151,9 @@ body{
 }
 
 .course_card{
-  width: 250px;
-  margin-bottom: 15px;
+  flex-grow:1;
+  flex-basis:20%;
+  margin: 10px;
 }
 .course_card img{
   width: 100%;
@@ -188,7 +193,7 @@ body{
 }
 
 .course_enroll{
-  padding: 5px 10px;
+  padding: 3px;
   border-radius: 20px;
   border: none;
   color:white;
@@ -197,7 +202,7 @@ body{
 
 .course_Add_To_cart{
   display: flex;
-  padding: 5px 10px;
+  padding: 3px;
   border-radius: 20px;
   border: none;
   text-align: center;
@@ -206,8 +211,8 @@ body{
 }
 
 .course_Add_To_cart img{
-  width: 15px;
-  height: 15px;
+  width: 12px;
+  height: 12px;
   margin-right: 3px;
 }
 
@@ -268,4 +273,80 @@ body{
   background-clip: text;
   color: transparent;
   -webkit-background-clip: text;
+}
+
+@media screen and (max-width:800px){
+  body{
+    font-size: 11px;
+  }
+  .course_card{
+    flex-basis:30%;
+  }
+  .discount-sale{
+    top:40px;
+  }
+  .navbar__right{
+    display: none;
+  }
+
+  .navbar__right__hidden{
+    display: block;
+  }
+}
+
+@media screen and (max-width:600px){
+  .course_card{
+    flex-basis:40%;
+  }
+
+  body{
+    font-size: 10px;
+  }
+
+  .categories{
+    display: none;
+  }
+
+  .navbar__middle,.navbar__right{
+    display: none;
+  }
+
+  .navbar__right__hidden{
+    display: block;
+  }
+
+}
+
+@media screen and (max-width:400px){
+  .course_card{
+    flex-basis:60%;
+  }
+
+  body{
+    font-size: 8px;
+  }
+
+  .categories{
+    display: none;
+  }
+
+
+  .navbar__middle,.navbar__right{
+    display: none;
+  }
+
+  .navbar__right__hidden{
+    display: block;
+  }
+
+  .discount-sale{
+    top:20px;
+    padding: 5px;
+    width:32%;
+  }
+  
+  .discount-sale p{
+    display: none;
+  }
+
 }
